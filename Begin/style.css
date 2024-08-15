@@ -4,10 +4,12 @@ body {
   justify-content: center;
   margin-top:3em;
   background-color: #6F7295;
+  perspective: 1000px;      /* it represents how many pixels you are away from the object -- lower values show a more dramatic effect and higher a more flatter */
 }
 
 .robot {
-
+  transform: rotateX(45deg) rotateY(45deg);          /* rotation makes element look weird, so a perspective needs to be added to the parent element, in this case, body { */
+  transform: translate3d(100px, 200px, -100px); /* works for X, Y and Z axis */
 }
 
 .wrap {
