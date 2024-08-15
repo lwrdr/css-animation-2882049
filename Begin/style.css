@@ -16,7 +16,7 @@ h2 {
   animation-delay: 5s;
   animation-fill-mode: backwards;
 }
-/* annimation-fill-mode - lets you control what happens during the delay before an animation starts - and what happens after an annimation duration has ended. */
+/* animation-fill-mode - lets you control what happens during the delay before an animation starts - and what happens after an annimation duration has ended. */
 .wrap {
   display: flex;
   align-items: center;
