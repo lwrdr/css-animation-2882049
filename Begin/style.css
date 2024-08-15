@@ -1,12 +1,16 @@
 
 .cloud01 {
-
+  animation: float 25s linear infinite;
 }
 
 .cloud02 {
-  
+  animation: float 35s 5s linear infinite backwards;
 }
 
+@keyframes float {
+  0% {transform: translateX(-150px)}
+  100% {transform: translateX(800px)}
+}
 
 /* Other styles  */
 
