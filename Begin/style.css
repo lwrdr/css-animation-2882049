@@ -6,11 +6,17 @@ body {
 }
 
 img {width: 150px;}
-
+                              /* CSS will always consider the last argument / modifier.. therefore the last one will be rendered on the browser */
 .robot {
+  transform: translateX(100%);        /* When using %, it's related to the percentage of its own width/height, etc.; */
+  transform: translate(100px, 300px);             /* when using only "translate", you can change both X and Y axis.. defining both values (with units) separated by a comma ","; */
+  transform: translate(100%, 200%) scale(2) rotate(-20deg);       /* scale (number) is how many times it'll scale. negative numbers will also work */
+}                                                                 /* scale(calc(1/3)) will also work if needed -- or (0.3) (0,25) (0.5), etc. */
+/* BE AWARE THAT THE ORDER OF THE MODIFIERS IS IMPORTANT -- scale before translate % is different because than translate then scale. */
 
-}
-
+/* translateX();    -- X axis (horizontal) */
+/* translateY();    -- Y axis (vertical) */
+/* can also add other modifiers to the transform, like scale() and rotate(**deg) -- see example above. */
 
 
 
